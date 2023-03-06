@@ -1,4 +1,7 @@
 <body class="bg-img">
+  <br>
+  <br>
+  <br>
 <form id="form">
   <h1 id="h1"> Sign In </h1>
   <div class="input">
@@ -18,13 +21,13 @@
   </div>
     <br>
   <div class="button">
-  <input type="button" value="Submit" onclick="function1()">
+  <input type="submit" class="submit" value="Submit" onclick="function1()">
   </div>
   <br>
   <br>
   <br>
   <body>
-    <input type="submit" class="submit" value="forgot password?"> 
+    <input type="button" value="     forgot password?"> 
   </body>
   <br>
 </form>
@@ -51,41 +54,38 @@ form {
   background: #F5FFFF;
 }
 
+body {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.bg-img {
+  background-image: url(
+"https://i.ibb.co/CBW4fk7/BDB166-B4-C7-A4-41-A4-A6-DC-C65-F1-DDD391-C.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+form {
+  justify-content: center;
+  align-content: center;
+  padding: 20px 50px;
+  border-radius: 5px;
+  background: #F5FFFF;
+}
+
 input {
   border: none;
   border-radius: 0px;
   background: #F5FFFFF;
-  border-bottom: 1px solid;
+  border-bottom: 1px black solid;
 }
 
-input[type=button] {
+input[type=submit] {
   background: red;
   color: black;
   border: none;
-  width: 150px;
-  height: 25px;
-  text-align: center;
-  border-radius: 0px;
-}
-.button {
-  background: red;
-  color: black;
-  border: none;
-  width: 150px;
-  height: 25px;
-  text-align: center;
-  border-radius: 0px;
-}
-
-::placeholder {
-  color: grey;
-}
-
-.submit {
-  border: none;
-  background: #F5FFFF;
-  color: blue;
-}
 </style>
 <script>
   var function1 = function1;
